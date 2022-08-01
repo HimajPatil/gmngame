@@ -1,0 +1,169 @@
+:root{
+    --one: #000000;
+    --two: #ffffff;
+    --three: aqua;
+    --four: #1b1c38;
+    /* Designed by Himaj Patil */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: var(--one);
+    height: 100vh;
+    color: var(--two);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.container > header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 60px 0px 60px;
+}
+.container > header > div{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--two);
+}
+.container > header > div > .gameAni{
+    animation-name: gameAni;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes gameAni{
+    0%{color: #ffffff;}
+    25%{color: #dd35ff;}
+    45%{color: #ff5151;}
+    60%{color: aqua;}
+    100%{color: #fff956;}
+}
+.container > header > #reset{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 8px 15px;
+    border-radius: 50px;
+    border: 2px solid var(--two);
+    background: none;
+    color: var(--two);
+    cursor: pointer;
+}
+#reset:hover{
+    animation-name: btnAni;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes btnAni{
+    0%{color: #ffffff; border:2px solid #ffffff;}
+    25%{color: #dd35ff; border:2.5px solid #dd35ff;}
+    45%{color: #ff5151; border:2px solid #ff5151;}
+    60%{color: aqua; border:2.5px solid aqua;}
+    100%{color: #fff956; border:2px solid #fff956;}
+}
+/* ================ */
+.container > .checkerDispPar{
+    margin: 150px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container > .checkerDispPar > hr{
+    border: 3px solid var(--two);
+    width: 100vw;
+}
+.container > .checkerDispPar > div{
+    border: 5px solid var(--two);
+}
+.container > .checkerDispPar > #checkerDisp{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 25px;
+}
+.container > .checkerDispPar > #checkerDisp > #afwMsg{
+    display: none;
+}
+.container > .checkerDispPar > #checkerDisp > span{
+    font-size: 60px;
+    font-weight: 1000;
+}
+/* ================ */
+.container > .console{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 250px;
+    margin: 10px 0 35px 0;
+}
+.container > .console > .controller{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/* .container > .console > .controller > .txtboxPar{
+
+} */
+.container > .console > .controller > .txtboxPar > #txtbox{
+    z-index: 2;
+    height: 80px;
+    width: 200px;
+    padding: 25px 0px 30px 0px;
+    margin: 0 0 -5px 0;
+    font-size: 70px;
+    text-align: center;
+    background: var(--four);
+    color: var(--two);
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    caret-color: var(--four);
+}
+.container > .console > .controller > .controls{
+
+    display: flex;
+    flex-direction: column;
+}
+.container > .console > .controller > .controls > #check{
+    z-index: 1;
+    width: 200px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 8px 15px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: 10px solid #34343b;
+    background: #1b1c38;
+    background: #34343b;
+    color: var(--two);
+    cursor: pointer;
+}
+.container > .console > .scoreData{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container > .console > .scoreData > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    height: 45px;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container > .console > .scoreData > div > span{
+    margin: 0 10px 0 0;
+}
+/* .container > .console > .scoreData > #gameMsg{
+}
+.container > .console > .scoreData > #score{
+}
+.container > .console > .scoreData > #highscore{
+} */
